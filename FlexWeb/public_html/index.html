@@ -9,35 +9,57 @@ and open the template in the editor.
 <!DOCTYPE HTML>
 <html>
  <head>
-<link rel="stylesheet" type="text/css" href="mystyle.css">
-<style>
-body {
-    background-image: url("bg.jpg");
-    background-repeat: y;
-}
-   h1{
-    color: whitesmoke;
-    text-align: center;
-    box-shadow: 5px, 5px, wheat;
-    border-style: double;
-}
-tr{ 
-    color: wheat;
-    border-style: double;
-        
-}
-</style>
+<link rel="stylesheet" type="text/css" href="flexWebCSS.css">
+<link  rel="icon" href="Icon.png" >
+
 </head>
 
     <body>
     <h1>FlexWeb</h1>
+     
     <table>
-        <tr> 
-            <td align="center"> <img src="home.jpg" width="30" height="30" ></td>
-            <td><img src="closeTab.jpg" width="30" height="30" ></td>
+        <tr>
+            <div class="tooltip"> 
+                <img src="home.jpg" width="30" height="30" >
+            <span class="tooltiptext">Home page</span>
+            </div>
+        </tr> 
+        <tr>
+        <div class="tooltip" onclick="closeTab();"><img src="closeTab.jpg" width="30" height="30" >
+            <span class="tooltiptext" >Close this tab</span>
+        </div>
         </tr>
+            <div class="tooltip" onclick="openChat();"><img src="NewTab.jpg" width="30" height="30">
+            <span class="tooltiptext">Open a new tab</span>
+        </div>
+        </div>
+        <div class="tooltip" onclick="selectFile();"><img src="open_file.jpg" width="30" height="30">
+            <span class="tooltiptext" >Open Files</span>
+        </div>
         
-    </table>
-    
+        <tr><input type="textArea"></tr>
+        
+      </table>      
+
+
     </body>
+    
+    <script>
+        
+    var myWin;
+        
+    function openChat() {
+             myWin = window.open("NTC Chat", "_blank", "width=500, height=500");
+             
+          
+    }
+    
+    function closeTab() {
+        myWin.close();
+    }
+    
+
+</script>
 </html>
+
+
