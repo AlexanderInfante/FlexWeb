@@ -12,7 +12,7 @@ and open the template in the editor.
 body{
     
     background-image: url("bg.jpg");
-    background-repeat: repeat-y;
+    background-repeat: repeat-y;/*repeats bg vertically*/
    
 }
 H1{
@@ -23,25 +23,30 @@ H1{
 
 
 h2, h3{
-    text-decoration: threedface;
+
     text-decoration: underline;
-    color: lightyellow;
+    
+     /*not sure what to do just yet as far as the color
+       of the headings
+     */
+    /*color: lightyellow;*/ 
+    color: white;
 
 }
 
 img{
-
+    border-radius: 10px;/*gives the rounded edges to the tables*/
     border-style: solid;
     color: skyblue;
 }
 
 p{
-    align-content: flex-start;
-    background-color: black;
-    box-shadow: 5px 5px 5px whitesmoke;
+    border-radius:   10px; /*gives the rounded edges to the tables*/
+    background-color: gray;
+    box-shadow: 5px 5px 5px skyblue;
     font-size: large;
     border-style: solid;
-    color: skyblue;
+    color: white;
 
 }
 
@@ -51,7 +56,7 @@ a, tim{
 }
 a:hover{
     text-decoration: underline;
-    color: purple;
+    color: mediumblue;
     
 }
 pp{
