@@ -11,8 +11,9 @@ and open the template in the editor.
 
 body{
     
-    background-color: black;
-    opacity: 20%;
+    background-image: url("bg.jpg");
+    background-repeat: repeat-y;
+   
 }
 H1{
    
@@ -22,29 +23,39 @@ H1{
 
 
 h2, h3{
-
+    text-decoration: threedface;
     text-decoration: underline;
     color: lightyellow;
 
 }
 
 img{
-    
+
     border-style: solid;
     color: skyblue;
 }
 
 p{
-    
+    align-content: flex-start;
+    background-color: black;
+    box-shadow: 5px 5px 5px whitesmoke;
     font-size: large;
     border-style: solid;
     color: skyblue;
+
 }
 
 a, tim{
-    color: lightsteelblue;
+    text-decoration: none;
+    color: skyblue;
 }
-
+a:hover{
+    text-decoration: underline;
+    color: purple;
+    
+}
 pp{
     padding: 0px 20px;
 }
+
+/*create tooltip for UAT */
