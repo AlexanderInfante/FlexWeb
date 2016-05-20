@@ -9,8 +9,33 @@ and open the template in the editor.
 */
 
 
-h1 {
+body {
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+
+}
+   h1{
+    color: whitesmoke;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+
+
+}
+.tooltip .tooltiptext{
+       display: inline;
+       color: white;
+       visibility: hidden;
+}
+
+.tooltip:hover .tooltiptext {
     
-   
-    
+    visibility: visible;
+    color: white;
+    display: table-cell;
+}
+
+table{
+
 }
