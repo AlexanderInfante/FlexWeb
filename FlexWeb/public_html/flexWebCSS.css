@@ -9,33 +9,90 @@ and open the template in the editor.
 */
 
 
-body {
-    background-image: url("bg.png");
+
+body{
+    background-color: black;
     background-repeat: no-repeat;
 
 }
-   h1{
-    color: whitesmoke;
-    position: fixed;
-    bottom: 0;
+
+h1{
+    color: skyBlue;
+    font-family: cursive;
     text-align: center;
-    width: 100%;
-
-
-}
-.tooltip .tooltiptext{
-       display: inline;
-       color: white;
-       visibility: hidden;
+    position: absolute;
+    width: 100%; 
+    bottom: -70px;
 }
 
-.tooltip:hover .tooltiptext {
+h2{
+    color: Blue;
+    text-align: center;
+    width: 100%;  
+    position: absolute;
+    bottom: -90px;
+
+}
+
+.div{
+    background-image: url("bg.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    background-attachment: scroll;
+}
+
+h3{
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    background-color: white;
+
+}
+
+div.div2{
+    background-clip:content-box;
     
-    visibility: visible;
+}
+
+p{
+    border-radius:   10px; /*gives the rounded edges to the tables*/
+    background-color: gray;
+    box-shadow: 5px 5px 5px skyblue;
+    font-size: large;
+    border-style: solid;
     color: white;
-    display: table-cell;
-}
-
-table{
 
 }
+
+pp{
+    padding: 0px 20px;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: mediumblue;
+    
+}
+
+left{
+    font-size: 30px;
+    float: left;
+    color: white;
+    
+}
+
+right{
+    font-size: 30px;
+    float: right;
+    color: white;
+}
+left:hover, right:hover{
+    font-size: 35px;
+    color: skyblue;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+
