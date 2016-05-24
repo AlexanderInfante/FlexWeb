@@ -45,6 +45,7 @@ h2{
     background-attachment: scroll;
 }
 
+
 h3{
     text-align: center;
     text-decoration: underline;
@@ -53,8 +54,6 @@ h3{
     font-size: 30px;
 }
 
-h4{
-}
 
 
 div.div2{
@@ -85,9 +84,10 @@ pp{
 
 
 left{
+    from{top:-10px; left: -10px;};
+    to{ top:0px; left: 0px;}
     font-size: 30px;
     color: white; 
-
 }
 
 
@@ -102,7 +102,7 @@ left:hover, right:hover{
     color: skyblue;
     transition-duration: .25s;
     transition-timing-function: ease;
-}
+}  
 
 a { text-decoration: none; color: white; font-size: 30px;}
 a:visited { text-decoration: none; color: white; }
