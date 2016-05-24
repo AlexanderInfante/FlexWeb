@@ -148,21 +148,16 @@ div.top{
       
     }
 
-    da{
-        width:  75px;
-        height: 75px;
+    da img{
+        width:  150px;
+        height: 150px;
         margin: 45px;
-        margin-bottom: 30px;
 
     }
     
     da:hover{
         border-bottom-color: gray;
-        border-left: none;
-        border-right: none;
         border-top: black;
         border-style: solid;
-                width:  75px;
-        height: 75px;
 
     }
