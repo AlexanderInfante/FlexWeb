@@ -11,8 +11,7 @@ and open the template in the editor.
 
 
 body{
-    background-color: black;
-    background-repeat: no-repeat;
+    background-image: url(dott);
 
 }
 
@@ -47,6 +46,7 @@ h2{
 
 
 h3{
+    margin-top: 100px;  margin-left:-02px; margin-right: -3px;
     text-align: center;
     text-decoration: underline;
     color: black;
@@ -57,16 +57,18 @@ h3{
 
 
 div.div2{
+     margin-left:-02px; margin-right: -3px;
     text-align: center;
     font-size: 25px;
     font-family:cursive;
     color: black;
     background-clip:content-box;
-    background: linear-gradient(grey, white);
+    background-image: url(dott);
     box-shadow: 5px,5px,5px;
     border-radius:  10px;
-    
+    border-color: red;   
 }
+
 
 p{
     border-radius:   10px; /*gives the rounded edges to the tables*/
@@ -84,8 +86,7 @@ pp{
 
 
 left{
-    from{top:-10px; left: -10px;};
-    to{ top:0px; left: 0px;}
+
     font-size: 30px;
     color: white; 
 }
@@ -140,24 +141,36 @@ div.top{
    
 
     .div3{
-      color: gold;
+     
+      color: black;
       text-align: center;
       font-family:serif;
-      font-size: 35px;
-     
-      
+      font-size: 35px;     
     }
 
     da img{
         width:  150px;
         height: 150px;
         margin: 45px;
+       
+    }
+
+    
+    da:hover{
+        box-shadow: inset 0px 0px 55px black;
+        border-radius: 5px;
+        transition: .75s;
+        transition-timing-function:ease-in-out;
+
 
     }
     
-    da:hover{
-        border-bottom-color: gray;
-        border-top: black;
-        border-style: solid;
-
+    hr{
+        color: steelblue;
+    }
+    
+    .div2 img:hover{
+        
+        background-color: steelblue;
+        border-radius: 20px;
     }
