@@ -12,10 +12,11 @@ and open the template in the editor.
 
 body{
     background-image: url(dott);
-
+    margin: 0px;
 }
 
 h1{
+    animation: fadein 2s;
     color: skyBlue;
     font-family: cursive;
     text-align: center;
@@ -25,6 +26,7 @@ h1{
 }
 
 h2{
+    animation: fadein 2s;
     color: Blue;
     text-align: center;
     width: 100%;  
@@ -34,30 +36,35 @@ h2{
 }
 
 .div{
-    background-image: url("bg.png");
+    animation: fadein 2s;
+    background-image: url(bbg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 100px;
+    bottom: 0px; 
     z-index: -1;
-    background-attachment: scroll;
+
 }
 
 
 h3{
+    animation: fadein 2s;
     margin-top: 100px;  margin-left:-02px; margin-right: -3px;
     text-align: center;
     text-decoration: underline;
-    color: black;
-    background: linear-gradient(skyblue, white);
+    color: black; 
     font-size: 30px;
 }
 
 
 
 div.div2{
-     margin-left:-02px; margin-right: -3px;
+
+    margin-left:-02px; margin-right: -3px;
     text-align: center;
     font-size: 25px;
     font-family:cursive;
@@ -86,20 +93,30 @@ pp{
 
 
 left{
-
+    animation: fadein 2s;
+    float: left;
     font-size: 30px;
     color: white; 
 }
 
 
 right{
+
+    animation: fadein 2s;
     font-size: 30px;
     float: right;
-    color: white;
-   
+    color: white;  
 }
-left:hover, right:hover{
 
+@keyframes fadein {
+    
+    from { opacity: 0; }
+    to   { opacity: 1;}
+}
+
+
+left:hover, right:hover{
+    
     color: skyblue;
     transition-duration: .25s;
     transition-timing-function: ease;
@@ -112,7 +129,7 @@ a:focus { text-decoration: none; }
 a:hover, a:active { text-decoration: none; }
 
 div.top{
-    
+/*    display: none;*/
     width:30px;height:30px;
     position: fixed;   
     right:  10px;
@@ -126,7 +143,7 @@ div.top{
     padding-bottom: 10px;
 }
 
-.top:hover{
+div.top:hover{
     
     width:30px;height:30px;
     opacity: 1.0;
@@ -137,12 +154,16 @@ div.top{
     padding-left: 7px;
     padding-right: 2px;
     padding-bottom: 10px;
+
     }
    
 
     .div3{
-     
-      color: black;
+
+      padding: 0px; margin: 0px;
+      background-color: White;
+      box-sizing:initial;
+      color: skyblue;
       text-align: center;
       font-family:serif;
       font-size: 35px;     
@@ -157,20 +178,15 @@ div.top{
 
     
     da:hover{
-        box-shadow: inset 0px 0px 55px black;
+        box-shadow: inset 0px 0px 25px black;
         border-radius: 5px;
         transition: .75s;
         transition-timing-function:ease-in-out;
-
-
+        background-color: skyblue;
     }
     
+
     hr{
         color: steelblue;
     }
     
-    .div2 img:hover{
-        
-        background-color: steelblue;
-        border-radius: 20px;
-    }
