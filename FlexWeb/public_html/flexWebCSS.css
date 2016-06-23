@@ -37,13 +37,14 @@ h2{
 
 .div{
     animation: fadein 2s;
-    background-image: url(bbg);
-    width: 100%;
-    background-repeat: no-repeat;
+/*    background-image: url(bg2.jpeg);*/
+    background: url(bg2.gif) 0px 0px repeat;
+    background-color: black;
+    width: 100%; height: 100%;
     background-attachment:fixed;
     position: absolute;
     top: 0;
-    left: 0;
+    left:0;
     right: 0;
     bottom: 0px; 
     z-index: -1;
@@ -131,16 +132,16 @@ a:hover, a:active { text-decoration: none; }
 div.top{
 /*    display: none;*/
     width:30px;height:30px;
-    position: fixed;   
-    right:  10px;
-    bottom: 10px;
-    opacity: .6;
-    background-color: gray;
-    border-radius: 30px;
-    padding-top: 0px;
-    padding-left: 7px;
-    padding-right: 2px;
-    padding-bottom: 10px;
+position: fixed;   
+right:  10px;
+bottom: 10px;
+opacity: .6;
+background-color: gray;
+border-radius: 30px;
+padding-top: 0px;
+padding-left: 7px;
+padding-right: 2px;
+padding-bottom: 10px;
 }
 
 div.top:hover{
@@ -161,7 +162,7 @@ div.top:hover{
     .div3{
 
       padding: 0px; margin: 0px;
-      background-color: White;
+      background-color: lightgoldenrodyellow;
       box-sizing:initial;
       color: skyblue;
       text-align: center;
@@ -188,5 +189,21 @@ div.top:hover{
 
     hr{
         color: steelblue;
+    }
+    
+    
+    dr img:hover{
+        border-radius: 5px;
+        box-shadow: 0px 0px 25px black;
+        transition: .75s;
+    }
+
+    .div4{
+        font-size: 20px;
+
+        color: white;
+        background-color: black;
+        padding: 0px;
+        margin: 0px;
     }
     
