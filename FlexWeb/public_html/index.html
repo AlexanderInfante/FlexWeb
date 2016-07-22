@@ -7,31 +7,49 @@ and open the template in the editor.
 
 
 <!DOCTYPE HTML>
-<html style="padding: 0px;">
+<html style="padding: 0px; margin: 0;">
  <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="jquery-1.12.2.min.js"></script>
 <link rel="import" href="/Users/alexanderinfante/NetBeansProjects/FlexWeb/HTML5Application/public_html/index.html">
 <link rel="stylesheet" type="text/css" href="flexWebCSS.css">
 <link  rel="icon" href="Icon.png" >
-<script>
+<script type="text/javascript">
+    
+    //back to the top jquery 
+jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 700;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.top').fadeIn(duration);
+        } else {
+            jQuery('.top').fadeOut(duration);
+        }
+    });
+    
+    jQuery('.top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+});
 
 </script>
 </head>
+    
+<body>
 
-
-        
         <h1>Alexander Infante Jr.</h1>
         <h2 style="cambria">Computer Programmer</h2> 
         <left><strong><a href="#AM">About Me</a></strong></left> 
         <right ><strong><a href="#skills">Skills</a></strong></right> 
                  <div class="div">
-             <a href="#top" />
+            // <a href="#top" />
          </div> 
         <br style="line-height: 500px;" />
-        <div class="top" >
+        <div  id="top" class="top">
             <a href="#top"><img src="top.png" ></a>
-            
+
         </div>
         <br style="line-height:  80px; position: absolute; text-align: center;"/>
 
@@ -90,11 +108,15 @@ and open the template in the editor.
                 </tr>
             </div>
 
-        <div class="div4">
+        <div class="div4" >
             <tr>
-              Developed by  Alexander Infante Jr.
+              Developed by  Alexander Infante Jr. | Tampa, FL | Ajinfante@ymail.com 
              
              <tr>
         </div>
+        
+  
+
+        </body>
 </html>
 
